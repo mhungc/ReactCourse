@@ -1,6 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import Album from './Album';
+import UserApp from './UserApp';
+import HelloWorldArrowFunc from './HelloWorldArrowFunc';
+import HelloWorldFunction from './HelloWorldFunction';
+import MyTable from './MyTable';
+import NameForm from './NameForm';
+import Welcome from './Welcome';
 import './App.css';
+import BasicForm from './BasicForm';
+import ContactForm from './ContactForm';
 
 function App() {
   return (
@@ -18,6 +27,15 @@ function App() {
         >
           Learn React
         </a>
+        { console.log("ENV VAR " + process.env.NODE_ENV) }
+        <Welcome name="PEPE"></Welcome>
+        <HelloWorldFunction></HelloWorldFunction>
+        <HelloWorldArrowFunc></HelloWorldArrowFunc>
+        <Album></Album>
+        <NameForm></NameForm>
+        <UserApp></UserApp>
+        <MyTable></MyTable>
+        <ContactForm></ContactForm>
       </header>
     </div>
   );
